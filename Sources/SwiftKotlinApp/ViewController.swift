@@ -28,6 +28,7 @@ class ViewController: NSViewController {
     @IBOutlet var swiftTextView: NSTextView!
     @IBOutlet var kotlinTextView: NSTextView!
     @IBOutlet var feedbackTextField: NSTextField!
+    @IBOutlet var formatTypeButton: NSPopUpButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

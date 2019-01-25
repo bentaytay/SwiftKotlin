@@ -759,7 +759,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="LoM-Qb-g0g">
-                                <rect key="frame" x="344" y="453" width="72" height="17"/>
+                                <rect key="frame" x="466" y="453" width="72" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Kotlin" id="3Mg-YV-9GT">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -779,11 +779,12 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" id="cyW-1z-bRY">
-                                <rect key="frame" x="203" y="444" width="81" height="32"/>
+                                <rect key="frame" x="377" y="444" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Format" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DHF-bn-YpY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="formatSwift:" target="XfG-lQ-9wD" id="osa-T5-3yn"/>
@@ -798,10 +799,25 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <popUpButton verticalHuggingPriority="750" id="S1h-zA-7Le">
+                                <rect key="frame" x="202" y="448" width="166" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Format Swift" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9cc-Hb-Y9D" id="HcI-FU-Mk2">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="a09-Kk-cc3">
+                                        <items>
+                                            <menuItem title="Format Swift" state="on" keyEquivalent="t" id="9cc-Hb-Y9D"/>
+                                            <menuItem title="Format Storyboard" keyEquivalent="u" id="Rr7-GV-LsT"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="feedbackTextField" destination="RLP-7n-pEc" id="qbA-4J-fS9"/>
+                        <outlet property="formatTypeButton" destination="S1h-zA-7Le" id="nAQ-zu-sfF"/>
                         <outlet property="kotlinTextView" destination="pog-tu-0qG" id="oZF-pH-Sgu"/>
                         <outlet property="swiftTextView" destination="Edu-qR-eKg" id="i1y-Q0-wwf"/>
                     </connections>
